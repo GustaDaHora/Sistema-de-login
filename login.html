@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema/Login</title>
+    <style type="text/css">
+        body {
+            background-color: whitesmoke;
+            color: rgb(63, 112, 84);
+            font-style: bold;
+        }
+
+        div#form {
+            border: 5px solid rgb(76, 136, 102);
+            border-radius: 15px;
+            text-align: center;
+            padding: 30px;
+            margin-top: 10%;
+            margin-left: 35%;
+            margin-right: 35%;
+            font-size: 30px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
+        }
+
+        input {
+            outline: none !important;
+            margin: 10px;
+            padding: 10px;
+            border: 3px solid rgb(76, 136, 102);
+            border-radius: 15px;
+        }
+
+        input:focus {
+            outline: none !important;
+            box-shadow: 3px 3px 3px 3px rgb(76, 136, 102);
+            border: 0;
+        }
+
+        button {
+            background-color: rgb(76, 136, 102);
+            border: 0;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 10px;
+            color: whitesmoke;
+            font-family: cursive;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
+        }
+
+        div#title {
+            font-family: cursive;
+        }
+        p {
+            display: none;
+            color: red;
+            font-weight: bold;  
+            font-family: Arial, Helvetica, sans-serif;      
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <div id="title">LOGIN</div>
+        <p id="errormsg">Erro: verifique os dados e tente novamente</p>
+        <div><input type="text" id="inplogin" name="inplogin" placeholder="Usuario"></div>
+        <div><input type="password" id="inpsenha" name="inpsenha" placeholder="Senha"></div>
+
+        <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+<script src="./loginscript.js"></script>
+<script src="./renderer.js"></script>
+
+</html>
